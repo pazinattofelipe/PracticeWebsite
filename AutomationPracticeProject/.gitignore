@@ -1,0 +1,13 @@
+.DS_Store
+.idea
+.gradle
+out
+
+# Library configuration lives here, keep it.
+!.idea/libraries
+/gradle/
+/build/
+/gradlew.bat
+/gradlew
+/.circleci/config.yml
+swapi-automation-testing.iml

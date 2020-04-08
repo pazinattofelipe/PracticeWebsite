@@ -1,0 +1,42 @@
+<div class="story">
+<h1></h1>
+<div class="path">com/automationpractice/features/Account.story</div>
+<div class="beforeStorySteps">
+</div>
+<div class="scenario">
+<h2>Scenario: The user should register a new account successfully</h2>
+<div class="step successful">Given I navigate to Home page</div>
+<div class="step successful">And I navigate to Register New Account for <span class="step parameter">Jhon6@outlook.com</span></div>
+<div class="step failed">When I fill my details in the Register form <span class="keyword failed">(FAILED)</span><br/><span class="message failed">java.lang.AssertionError: Failed to click on element locator 'By.id: customer_firstname'. Exception: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#customer_firstname&quot;}
+  (Session info: chrome=80.0.3987.163)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-5', revision: 'b3a0d621cc'
+System info: host: 'DESKTOP-ILRI1NU', ip: '192.168.1.51', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\lipep\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50852}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a252ff9184355099a277ae74cf5e57ae
+*** Element info: {Using=id, value=customer_firstname}</span></div>
+<div class="step notPerformed">And I submit the Register New Account <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then my account is registered successfully <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+</div>
+<div class="scenario">
+<h2>Scenario: An unregistered user should not have access to the application</h2>
+<div class="step successful">Given I navigate to Home page</div>
+<div class="step successful">When I Sign in with user <span class="step parameter">UserDoesNotExist@outlook.com</span></div>
+<div class="step successful">Then I am unable to log on the application</div>
+</div>
+<div class="scenario">
+<h2>Scenario: The user should not be able to create duplicated account</h2>
+<div class="step successful">Given I navigate to Home page</div>
+<div class="step successful">When I navigate to Register duplicated account for <span class="step parameter">Jhon123456@outlook.com</span></div>
+<div class="step successful">Then I receive an error message indicating the email address is already registered</div>
+</div>
+<div class="scenario">
+<h2>Scenario: User should not be able to log on without password</h2>
+<div class="step successful">Given I navigate to Home page</div>
+<div class="step successful">When I log with only my email <span class="step parameter">Jhon123456@outlook.com</span></div>
+<div class="step successful">Then I am unable to log on the application</div>
+</div>
+<div class="afterStorySteps">
+</div>
+</div>

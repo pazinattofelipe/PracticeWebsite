@@ -1,0 +1,23 @@
+#org.jbehave.core.reporters.PostStoryStatisticsCollector
+#Tue Apr 07 13:45:08 BRT 2020
+notAllowed=0
+examples=0
+scenariosNotAllowed=0
+pending=0
+stepsPending=0
+stepsNotPerformed=2
+scenariosSuccessful=3
+comments=0
+givenStoryScenarios=0
+givenStoryScenariosFailed=0
+stepsFailed=1
+scenarios=4
+givenStories=0
+stepsSuccessful=11
+steps=14
+givenStoryScenariosPending=0
+scenariosPending=0
+stepsIgnorable=0
+givenStoryScenariosNotAllowed=0
+scenariosFailed=1
+givenStoryScenariosSuccessful=0
